@@ -1,0 +1,15 @@
+import numpy as np
+
+N = 10
+vector = np.array([4, 8, 15, 16, 23, 42, 27, 32, 14, 9])
+
+mean = np.mean(vector)
+
+sample_variance = np.var(vector, ddof=1)
+
+population_variance = np.var(vector)
+
+print(f'Array (1x{N} vector): {vector}')
+print(f'Mean: {mean:.4f}')
+print(f'Sample Variance): {sample_variance:.4f}')
+print(f'Population Variance: {population_variance:.4f}')
